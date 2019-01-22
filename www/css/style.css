@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*padding-top: 80px;*/
+  /*for fixed header*/
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Arial';
+}
+.page{
+  overflow-y: scroll;
+  flex: 1 auto;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 990px;
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+}
+.wrapper_full-width{
+  max-width: none;
+}
+.header{
+  background: #fff;
+}
+.header_fixed{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+}
+.footer{
+  background: #333;
+  color: #fff;
+  margin-top: auto;
+}
+
+.header__top_line{
+  background: #37a14c;
+  padding: 7px 0;
+}
+
+.header__top_line_wrap,
+.header__middle_line_wrap{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.header__top_line span{
+  width: 100%;
+  color: #fff; 
+}
+
+.soc_and_flag{
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.soc_and_flag a{
+  padding: 0 3px;
+}
+
+.soc_and_flag a img{
+  max-width: 100%;
+}
+
+.contacts-list{
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact__title,
+.contact__phone{
+  color: #0F680E;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.contact__title,
+.contact__phone-list{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.contact__phone{
+  text-decoration: none;
+  display: block;
+}
+
+.contact__title{
+  min-width: 85px;
+}
+
+.contact__title_s{
+  color: #000;
+}
+
+.contact_s{
+  margin-top: 10px;
+}
+
+.contact__phone_s{
+  text-decoration: none;
+}
+
+.contact__title_s,
+.contact__phone_s{
+  vertical-align: top;
+}
+
+.buttons{
+  padding: 0 20px;
+}
+
+.buttons a{
+  background: #fec90c;
+  color: #fff;
+  text-align: center;
+  width: 136px;
+  padding: 9px 0;
+  vertical-align: middle;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 0;
+  box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.35);
+}
+
+
