@@ -16,6 +16,10 @@ body{
   font-size: 16px;
   font-family: 'Arial';
 }
+
+img{
+  max-width: 100%;
+}
 .page{
   overflow-y: scroll;
   flex: 1 auto;
@@ -27,6 +31,22 @@ body{
   z-index: 2;
   padding: 0 10px;
 }
+
+[class*="column-"]{
+  padding: 0 10px;
+  width: 100%;
+}
+
+.row{
+  margin: 0 -10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*----*/
 .wrapper_full-width{
   max-width: none;
 }
@@ -47,49 +67,38 @@ body{
   margin-top: auto;
 }
 
-.header__top_line{
-  background: #37a14c;
-  padding: 7px 0;
-}
+/*header__top-line*/
 
-.header__top_line_wrap,
-.header__middle_line_wrap{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+.header__top-line{
+  background: #37a14c;
+}
+.header__middle-line .row,
+.header__top-line .row{
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
 }
 
-.header__top_line span{
-  width: 100%;
-  color: #fff; 
+.column-header__top-line_text,
+.column-soc_and_flag{
+  width: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
-.soc_and_flag{
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.soc_and_flag a{
+.soc-and-flag a{
   padding: 0 3px;
 }
 
-.soc_and_flag a img{
+.soc-and-flag a img{
   max-width: 100%;
 }
 
-.contacts-list{
-  width: 100%;
-  padding: 0 20px;
+/*header__middle-line*/
+
+.header__middle-line{
+  padding: 12px 0;
+  /*margin: 0 60px;*/
 }
 
 .contact__title,
@@ -119,35 +128,92 @@ body{
   color: #000;
 }
 
-.contact_s{
+.skype{
   margin-top: 10px;
 }
 
-.contact__phone_s{
+.skype__login{
   text-decoration: none;
+  position: relative;
+  margin-left: 40px;
+  font-style: italic;
 }
 
-.contact__title_s,
-.contact__phone_s{
-  vertical-align: top;
+.skype__login::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -29px;
+  width: 19px;
+  height: 19px;
+  background: url(../img/skype.png);
 }
 
-.buttons{
-  padding: 0 20px;
+.header__buttons{
+
 }
 
-.buttons a{
+.btn-choose-server,
+.btn-random{
   background: #fec90c;
   color: #fff;
   text-align: center;
   width: 136px;
   padding: 9px 0;
-  vertical-align: middle;
   border-radius: 5px;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   margin: 10px 0;
   box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.35);
 }
+
+@media (min-width: 320px){
+  .column-header__logo-1,
+  .column-header__contacts,
+  .column-header__buttons,
+  .column-header__logo-2{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .btn-choose-server, .btn-random{
+    margin: 10px auto;
+  }  
+}
+
+
+@media (min-width: 560px){
+  .header__middle-line .row{
+    justify-content: center;
+  }
+  .column-header__logo-1{
+    max-width: 40%;
+  }  
+  .column-header__contacts{
+    max-width: 40%;
+  }  
+  .column-header__buttons{
+    max-width: 40%;
+  }
+  .column-header__logo-2{
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 960px){
+  .column-header__logo-1{
+    max-width: 18%;
+  }  
+  .column-header__contacts{
+    max-width: 28%;
+  }  
+  .column-header__buttons{
+    max-width: 16%;
+  }
+  .column-header__logo-2{
+    max-width: 38%;
+  }
+}
+
 
 
