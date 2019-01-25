@@ -72,25 +72,41 @@ img{
 .header__top-line{
   background: #37a14c;
 }
-.header__middle-line .row,
-.header__top-line .row{
+
+.header__top-line .wrapper{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__middle-line .row{
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
 }
 
-.header__top-line__text_column,
-.soc-and-flag_column{
+.header__top-line span,
+.soc{
   width: auto;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
-.soc-and-flag a{
+.header__top-line span{
+  color: #fff;
+}
+
+.soc a{
   padding: 0 3px;
 }
 
-.soc-and-flag a img{
+.soc a img{
   max-width: 100%;
 }
 
@@ -149,11 +165,7 @@ img{
   background: url(../img/skype.png);
 }
 
-.header__buttons{
-
-}
-
-.btn{
+.button{
   background: #fec90c;
   color: #fff;
   text-align: center;
@@ -167,15 +179,12 @@ img{
 }
 
 @media (min-width: 320px){
-  .header__logo-1_column,
-  .header__contacts_column,
-  .header__buttons_column,
-  .header__logo-2_column{
+  .header_column{
     max-width: 100%;
     text-align: center;
   }
 
-  .btn{
+  .button{
     margin: 10px auto;
   }  
 }
@@ -183,37 +192,28 @@ img{
 
 @media (min-width: 560px){
 
-  .header__contacts_column{
+  .header_column_contacts{
     text-align: left;
   }
   .header__middle-line .row{
     justify-content: center;
   }
-  .header__logo-1_column{
+  .header_column{
     max-width: 45%;
   }  
-  .header__contacts_column{
-    max-width: 45%;
-  }  
-  .header__buttons_column{
-    max-width: 45%;
-  }
-  .header__logo-2_column{
-    max-width: 45%;
-  }
 }
 
 @media (min-width: 960px){
-  .header__logo-1_column{
+  .header_column_logo-1{
     max-width: 18%;
   }  
-  .header__contacts_column{
+  .header_column_contacts{
     max-width: 28%;
   }  
-  .header__buttons_column{
+  .header_column_buttons{
     max-width: 16%;
   }
-  .header__logo-2_column{
+  .header_column_logo-2{
     max-width: 38%;
   }
 }
