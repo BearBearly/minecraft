@@ -103,11 +103,7 @@ img{
 }
 
 .soc a{
-  padding: 0 3px;
-}
-
-.soc a img{
-  max-width: 100%;
+  padding: 0 2px;
 }
 
 /*header__middle-line*/
@@ -191,13 +187,14 @@ img{
 
 
 @media (min-width: 560px){
-
   .header_column_contacts{
     text-align: left;
   }
+
   .header__middle-line .row{
     justify-content: center;
   }
+
   .header_column{
     max-width: 45%;
   }  
@@ -207,15 +204,19 @@ img{
   .header_column_logo-1{
     max-width: 18%;
   }  
+
   .header_column_contacts{
     max-width: 28%;
   }  
+
   .header_column_buttons{
     max-width: 16%;
   }
+
   .header_column_logo-2{
     max-width: 38%;
   }
+  
 }
 
 
