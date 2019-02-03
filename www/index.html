@@ -4,19 +4,20 @@
   <title>minecraft</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link 
-  rel="stylesheet" 
-  href="css/style.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/media.css"> 
 </head>
 <body>
-  <div class="header">
+  <div class="header m-b-25">
     <div class="header__top-line">
       <div class="wrapper">
         <span>Подключайся и играй на наших серверах!</span>
-        <div class="soc">
-            <a href="#"><img src="img/vk.png" alt="vk"></a><!--
-            --><a href="#"><img src="img/fb.png" alt="fb"></a><!--
-          --><a href="#"><img src="img/flag.png" alt="flag"></a>
+        <div class="soc-icons">
+          <a href="#"><i class="icon icon-vk"></i></a>
+          <a href="#"><i class="icon icon-fb"></i></a>
+          <a href="#"><i class="icon icon-flag"></i></a>
         </div>
       </div>
     </div>
@@ -38,27 +39,29 @@
                 <a class="contact__phone" href="tel:+380673322180">67-33-22-180</a>
               </span>
             </div>
-            <div class="skype">Скайп:<a class="skype__login" href="skype:minecraft-km7">minecraft-km7</a></div>
+            <div class="skype">Скайп:<a class="skype__address" href="skype:minecraft-km7"><i class="icon icon-skype"></i>minecraft-km7</a></div>
           </div>
           <div class="header_column header_column_buttons">
             <a class="button" href="#">Выбрать сервер</a>
             <a class="button" href="#">Случайный</a>
           </div>
           <div class="header_column header_column_logo-2 m-b-25 m-t-25">
-            <img src="img/header_img.png" alt="img">
+            <a href="#"><img src="img/header_img.png" alt="img"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="main_nav">
+    <div class="main-nav">
       <div class="wrapper">
+        <div class="main-nav__opener">
+          <span><i class="fas fa-angle-double-right"></i>Меню</span>
+        </div>
         <ul>
-            <li class="active"><a href="#">Главная</a></li><!-- 
-            --><li><a href="#">Об игре</a></li><!-- 
-            --><li><a href="#">Список серверов</a></li><!-- 
-            --><li><a href="#">Наша команда</a></li><!-- 
-            --><li><a href="#">Наша команда</a></li><!-- 
-          --><li><a href="#">Донат</a></li>
+          <li class="is-active"><a href="#">Главная</a></li> 
+          <li><a href="#">Об игре</a></li> 
+          <li><a href="#">Список серверов</a></li> 
+          <li><a href="#">Наша команда</a></li> 
+          <li><a href="#">Донат</a></li>
         </ul> 
       </div>
     </div>
@@ -66,34 +69,33 @@
   <div class="page">
     <div class="wrapper">
       <div class="row">
-        <div class="column column-sidebar column-1-4">
+        <div class="column column-tab-1-4 left-sidebar">
           <ul>
-            <li>
-              Мир Minecraft
+            <li class="with-internal"><a href="#">Мир Minecraft</a>
               <ul>
-                <li>- Блоки</li>
-                <li>- Мобы</li>
-                <li>- Структуры</li>
-                <li>- Биомы</li>
-                <li>- Миры</li>
+                <li><a href="#">Блоки</a></li>
+                <li><a href="#">Мобы</a></li>
+                <li><a href="#">Структуры</a></li>
+                <li><a href="#">Биомы</a></li>
+                <li><a href="#">Миры</a></li>
               </ul>
             </li>
-            <li>Industrial craft</li>
-            <li>OptiFine</li>
-            <li>Forge</li>
-            <li>TooManyItems</li>
-            <li>RailCraft</li>
+            <li><a href="#">Industrial craft</a></li>
+            <li><a href="#">OptiFine</a></li>
+            <li><a href="#">Forge</a></li>
+            <li><a href="#">TooManyItems</a></li>
+            <li><a href="#">RailCraft</a></li>
           </ul>
         </div>
-        <div class="column column-3-4">
+        <div class="column column-tab-3-4">
           <div class="article">
             <div class="article__title">Подключайся и играй на наших серверах!</div>
             <div class="article__image"><img src="img/article_img.png" alt=""></div>
             <div class="article__text">Minecraft — компьютерная игра в стиле песочницы с открытым миром, в которой перед игроком не ставятся какие-либо определенные цели — игроки сами выбирают, что им делать в игре. Несмотря на это, игра содержит систему достижений — поощрительных наград за выполнение определенных действий.</div>
           </div>
           <div class="row">
-            <div class="column column-3-3 column-1-3">
-              <div class="post">
+            <div class="column column-tab-1-3">
+              <a href="#" class="post">
                 <div class="post__top-line">
                   <div class="post__date">2016-08-04</div>
                   <div class="post__short-info">Страж подводной крепости довольно сильный противник для начинащего ирокаa</div>
@@ -101,10 +103,10 @@
                 <div class="post__img">
                   <img src="img/post-img1.png" alt="post_img">
                 </div>
-              </div> 
+              </a> 
             </div>            
-            <div class="column column-3-3 column-1-3">
-              <div class="post">
+            <div class="column column-tab-1-3">
+              <a href="#" class="post">
                 <div class="post__top-line">
                   <div class="post__date">2016-06-27</div>
                   <div class="post__short-info">Встречайте: белые медведи в холодных биомах!</div>
@@ -112,10 +114,10 @@
                 <div class="post__img">
                   <img src="img/post-img2.png" alt="post_img">
                 </div>
-              </div> 
+              </a> 
             </div>
-            <div class="column column-3-3 column-1-3">
-              <div class="post">
+            <div class="column column-tab-1-3">
+              <a href="#" class="post">
                 <div class="post__top-line">
                   <div class="post__date">2016-04-17</div>
                   <div class="post__short-info">В мобильной версии теперь можно приручить кролика, он станет верным другом</div>
@@ -123,7 +125,7 @@
                 <div class="post__img">
                   <img src="img/post-img3.png" alt="post_img">
                 </div>
-              </div> 
+              </a> 
             </div>
           </div>
         </div>
@@ -131,9 +133,9 @@
     </div>
   </div>
   <div id="footer" class="footer">
-    <div class="wrapper wrapper_full-width">
-      <div class="row row_contacts&title orange_bg">
-        <div class="footer__title">Подключайся и играй на наших серверах!</div>
+    <div class="footer-contacts orange_bg">
+      <div class="wrapper wrapper_footer-contacts">
+        <div class="footer-contacts__title">Подключайся и играй на наших серверах!</div>
         <div class="contacts-list">
           <div class="contact">
             <span class="contact__title">Админ:</span>
@@ -150,12 +152,19 @@
           </div>
         </div>
       </div>
-      <div class="row row_similar-service green_bg">
-        <a href="#" class="similar-service"><img src="img/banner1.png" alt="banner"></a>
-        <a href="#" class="similar-service"><img src="img/banner2.png" alt="banner"></a>
-        <a href="#" class="similar-service"><img src="img/banner3.png" alt="banner"></a>
-        <a href="#" class="similar-service"><img src="img/banner4.png" alt="banner"></a>
+    </div>
+    <div class="green_bg">
+      <div class="wrapper">
+        <div class="row row_similar-service ">
+          <a href="#" class="similar-service"><img src="img/banner1.png" alt="banner"></a>
+          <a href="#" class="similar-service"><img src="img/banner2.png" alt="banner"></a>
+          <a href="#" class="similar-service"><img src="img/banner3.png" alt="banner"></a>
+          <a href="#" class="similar-service"><img src="img/banner4.png" alt="banner"></a>
+        </div>
       </div>
+    </div>
+    <div class="wrapper">
+      <div class="сopyright">(c) Poshtar Boba, 2016</div>      
     </div>
   </div>
   <script src="js/src.js" ></script>  
