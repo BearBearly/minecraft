@@ -25,6 +25,10 @@
     max-width: 75%;
   }
 
+  .button{
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width: 768px){
@@ -36,6 +40,10 @@
 
   .header_column_logo-2{
     max-width: 100%;
+  }
+
+  .header__middle-line{
+    margin: 10px 0 -20px;
   }
 
   .main-nav__opener{
