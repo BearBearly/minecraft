@@ -437,6 +437,10 @@ img{
   padding: 15px 0;
 }
 
+.footer-contacts .contact__title{
+  text-align: right;
+}
+
 .footer-contacts__title{
   padding: 5px 0;
   font-size: 20px;
