@@ -173,10 +173,6 @@ img{
   min-width: 85px;
 }
 
-.skype{
-  margin-top: 10px;
-}
-
 .skype__address{
   text-decoration: none;
   position: relative;
@@ -303,15 +299,18 @@ img{
   border-bottom: 1px solid #e7e7e7;
 }
 
-.left-sidebar>ul>li>a{
-  display: block;
-  padding: 15px 0;
+.left-sidebar>ul>li>a:first-child{
+  padding-top: 0;
 }
 
 .left-sidebar>ul>li>a{
+  display: block;
+  font-size: 20px;
+  padding: 15px 0;
   text-decoration: none;
   color: #010101;
 }
+
 
 .left-sidebar .with-internal{
   padding-bottom: 10px;
