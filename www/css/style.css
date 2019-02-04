@@ -299,9 +299,12 @@ img{
 .left-sidebar ul{
   list-style-type: none;
 }
-
 .left-sidebar>ul>li{
   border-bottom: 1px solid #e7e7e7;
+}
+
+.left-sidebar>ul>li>a{
+  display: block;
   padding: 15px 0;
 }
 
@@ -319,7 +322,7 @@ img{
 }
 
 .left-sidebar .with-internal ul li a{
-  padding: 5px 0;
+  display: block;
   text-decoration: none;
   color: #ff0000;
   position: relative;
@@ -328,7 +331,7 @@ img{
 .left-sidebar .with-internal ul li a::before{
   content: '-';
   position: absolute;
-  top: 5px;
+  top: 0px;
   left: -10px;
   color: #ff0000;
 }
@@ -352,20 +355,45 @@ img{
   font-size: 14px;
 }
 
-.post{
-  display: inline-block;
-  text-decoration: none;
+.column-posts{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
   margin-top: 60px;
   margin-bottom: 30px;
 }
 
+.post{
+  /*for - flex: 1 auto;*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  /*---*/
+  text-decoration: none; 
+}
+
 .post__top-line{
   padding: 15px 5px 10px;
-  min-height: 90px;
   font-size: 14px;
-  line-height: auto;
   background: linear-gradient(to top, #45bc5c 0%,#329545 100%);
   border-bottom: 1px solid #57e974;
+  /*---*/
+  -webkit-flex: 1 auto;
+  -moz-flex: 1 auto;
+  -ms-flex: 1 auto;
+  -o-flex: 1 auto;
+  flex: 1 auto;
+  /*---*/
 }
 
 .post__date{
